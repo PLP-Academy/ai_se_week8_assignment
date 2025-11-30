@@ -129,7 +129,7 @@ flowchart LR
     Orders[Customer Order Queue]
 
     subgraph QA[Quality Inspection Agent]
-        Q1[Vision Model\nDefect Detection]
+        Q1[Vision Model - Defect Detection]
         Q2[Defect Classification]
         Q3[Severity Scoring & Report]
     end
@@ -145,7 +145,7 @@ flowchart LR
     SensorData --> P1 --> P2 --> P3
 
     subgraph PS[Production Scheduling Agent]
-        S1["Constraint Ingestion\n(Machine Status and Orders)"]
+        S1[Constraint Ingestion (Machine Status and Orders)]
         S2[Optimization Engine]
         S3[Generated Production Plan]
     end
@@ -155,11 +155,11 @@ flowchart LR
     P3 --> S1
     S1 --> S2 --> S3
 
-    Human[Human Supervisor\nReview & Approval]
+    Human[Human Supervisor - Review & Approval]
 
     S3 --> Human --> S3Approval[Approved Production Plan]
 
-    S3Approval --> FinalOutput[Updated Schedule\nFactory Execution Layer]
+    S3Approval --> FinalOutput[Updated Schedule - Factory Execution Layer]
 ```
 
 ---
