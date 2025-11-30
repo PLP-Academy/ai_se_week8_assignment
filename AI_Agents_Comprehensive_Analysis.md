@@ -2,8 +2,7 @@
 
 # AI Agents Assignment — Full Submission (Markdown Format)
 
-## Section 1 — Short Answer Questions  
-(All answers must remain between 150–200 words each.)
+## Section 1 — Short Answer Questions
 
 ### 1. Compare and contrast LangChain and AutoGen frameworks.  
 LangChain and AutoGen both support the development of AI agents, but they differ significantly in architecture and intended use. LangChain focuses on building applications through modular components such as LLM chains, memory, tools, and retrieval systems. It excels in orchestrating deterministic pipelines (e.g., RAG systems, tool-augmented chatbots) and offers flexible integration with vector stores, prompt templates, and model back-ends. Its strengths include granular control and a mature ecosystem, though complex multi-agent interactions can require considerable custom code.
@@ -59,8 +58,7 @@ Without robust memory management, agents cannot perform tasks that require multi
 
 ---
 
-## Section 2 — Case Study: Smart Manufacturing at AutoParts Inc.  
-**All subsections combined must remain 400–800 words (current count = 652 words).**
+## Section 2 — Case Study: Smart Manufacturing at AutoParts Inc.
 
 ### AI Agent Implementation Strategy  
 Proposed AI Agent Implementation Strategy
@@ -147,7 +145,7 @@ flowchart LR
     SensorData --> P1 --> P2 --> P3
 
     subgraph PS[Production Scheduling Agent]
-        S1[Constraint Ingestion\n(Machine Status + Orders)]
+        S1["Constraint Ingestion\n(Machine Status + Orders)"]
         S2[Optimization Engine]
         S3[Generated Production Plan]
     end
