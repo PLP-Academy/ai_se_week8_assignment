@@ -121,7 +121,7 @@ High-Level Workflow Diagram (replace with your exported PNG)
 ## Enhanced Workflow Diagram (Mermaid)
 
 ```mermaid
-flowchart LR
+flowchart TD
     Camera[High-Resolution Camera Feed]
     SensorData[IoT Sensors: Vibration, Heat, Torque]
     Orders[Customer Order Queue]
