@@ -1,6 +1,6 @@
 ---
 
-# AI Agents Assignment — Full Submission (Markdown Format)
+# AI Agents Assignment
 
 ## Section 1 — Short Answer Questions
 
@@ -145,7 +145,7 @@ flowchart LR
     SensorData --> P1 --> P2 --> P3
 
     subgraph PS[Production Scheduling Agent]
-        S1["Constraint Ingestion\n(Machine Status + Orders)"]
+        S1["Constraint Ingestion\n(Machine Status and Orders)"]
         S2[Optimization Engine]
         S3[Generated Production Plan]
     end
