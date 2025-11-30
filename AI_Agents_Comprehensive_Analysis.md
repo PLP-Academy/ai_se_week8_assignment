@@ -95,16 +95,27 @@ Provides step-by-step guidance for new workers, AR-assisted setup instructions, 
 Expected impact: lower training cost, improved retention.
 
 High-Level Workflow Diagram (replace with your exported PNG)
-┌───────────────────┐       ┌───────────────────────┐
-│ Quality Agent      │       │ Predictive Maintenance │
-│ Detects Defect     │──────▶│ Schedules Downtime     │
-└───────────────────┘       └───────────────────────┘
-           │                           │
-           ▼                           ▼
-┌───────────────────┐       ┌───────────────────────┐
-│ Production Agent   │◀─────│ Machine Status Update  │
-│ Adjusts Schedule   │       └───────────────────────┘
-└───────────────────┘
+
+```
+┌─────────────────────────────┐       ┌─────────────────────────────────┐
+│     Quality Inspection       │       │    Predictive Maintenance      │
+│     Agent                    │       │    Agent                        │
+│                             │       │                                 │
+│  • Detects Defects          │──────▶│  • Schedules Downtime           │
+│  • Flags Anomalies          │       │  • Optimizes Maintenance        │
+└─────────────────────────────┘       └─────────────────────────────────┘
+           │                                           │
+           │                                           │
+           ▼                                           ▼
+┌─────────────────────────────┐       ┌─────────────────────────────────┐
+│   Production Scheduling      │◀──────│   Machine Status Update         │
+│   & Optimization Agent       │       │   (Real-time Feedback)          │
+│                             │       └─────────────────────────────────┘
+│  • Adjusts Schedules        │
+│  • Balances Resources       │
+│  • Optimizes Throughput     │
+└─────────────────────────────┘
+```
 
 
 (Replace with your high-resolution workflow from n8n or Make.)
@@ -120,7 +131,7 @@ flowchart LR
     Orders[Customer Order Queue]
 
     subgraph QA[Quality Inspection Agent]
-        Q1[Vision Model<br/>Defect Detection]
+        Q1[Vision Model\nDefect Detection]
         Q2[Defect Classification]
         Q3[Severity Scoring & Report]
     end
@@ -136,7 +147,7 @@ flowchart LR
     SensorData --> P1 --> P2 --> P3
 
     subgraph PS[Production Scheduling Agent]
-        S1[Constraint Ingestion<br/>(Machine Status + Orders)]
+        S1[Constraint Ingestion\n(Machine Status + Orders)]
         S2[Optimization Engine]
         S3[Generated Production Plan]
     end
@@ -146,11 +157,11 @@ flowchart LR
     P3 --> S1
     S1 --> S2 --> S3
 
-    Human[Human Supervisor<br/>Review & Approval]
+    Human[Human Supervisor\nReview & Approval]
 
     S3 --> Human --> S3Approval[Approved Production Plan]
 
-    S3Approval --> FinalOutput[Updated Schedule<br/>Factory Execution Layer]
+    S3Approval --> FinalOutput[Updated Schedule\nFactory Execution Layer]
 ```
 
 ---
