@@ -1,5 +1,3 @@
----
-
 # AI Agents Assignment
 
 ## Section 1 — Short Answer Questions
@@ -56,7 +54,7 @@ Challenges arise when memory grows large, becomes inconsistent, or needs continu
 
 Without robust memory management, agents cannot perform tasks that require multi-step reasoning, planning, personalization, or situational awareness. Effective approaches include memory pruning, time-weighted embeddings, causal logging, and architecture patterns like centralized state stores. These practices ensure reliability, stability, and safe decision-making in operational AI systems.
 
----
+
 
 ## Section 2 — Case Study: Smart Manufacturing at AutoParts Inc.
 
@@ -118,7 +116,7 @@ High-Level Workflow Diagram (replace with your exported PNG)
 
 (Replace with your high-resolution workflow from n8n or Make.)
 
----
+
 
 ## Enhanced Workflow Diagram (Mermaid)
 
@@ -162,7 +160,7 @@ flowchart LR
     S3Approval --> FinalOutput[Updated Schedule - Factory Execution Layer]
 ```
 
----
+
 
 ## ROI & Timeline  
 ROI & Timeline
@@ -188,7 +186,7 @@ Timeline
 
 9–12 months: Full rollout, optimization, workforce adoption
 
----
+
 
 ## Risks & Mitigation  
 Risks & Mitigation
@@ -216,4 +214,3 @@ Mitigation: Limit data collection to machine performance, not individuals
 Risk: Job displacement
 Mitigation: Use agents for augmentation, not replacement
 
----
