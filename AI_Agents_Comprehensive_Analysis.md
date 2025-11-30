@@ -143,7 +143,7 @@ flowchart LR
     SensorData --> P1 --> P2 --> P3
 
     subgraph PS[Production Scheduling Agent]
-        S1[Constraint Ingestion (Machine Status and Orders)]
+        S1[Constraint Ingestion Machine Status Orders]
         S2[Optimization Engine]
         S3[Generated Production Plan]
     end
